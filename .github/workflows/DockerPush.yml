@@ -7,10 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     name: DockerPush
     steps:
-      - name: Checkout master
-        uses: actions/checkout@master
+      - name: Checkout main
+        uses: actions/checkout@main
       - name: Build and publish image
-        uses: ilteoood/docker_buildx@master
+        uses: ilteoood/docker_buildx@main
         with:
           publish: true
           imageName: naivest/jd
